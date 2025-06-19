@@ -16,7 +16,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com.eurekasserver" />
+        <module name="Eurekasserver" />
       </profile>
       <profile name="Annotation profile for ride" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -27,14 +27,16 @@
         </processorPath>
         <module name="ride" />
         <module name="PaymentService" />
+        <module name="ApiGateWay" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ApiGateWay" options="-parameters" />
+      <module name="Eurekasserver" options="-parameters" />
       <module name="PaymentService" options="-parameters" />
       <module name="UserService" options="-parameters" />
-      <module name="com.eurekasserver" options="-parameters" />
       <module name="ride" options="-parameters" />
     </option>
   </component>

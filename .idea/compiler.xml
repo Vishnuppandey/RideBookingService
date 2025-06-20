@@ -18,7 +18,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Eurekasserver" />
       </profile>
-      <profile name="Annotation profile for ride" enabled="true">
+      <profile name="Annotation profile for ApiGateWay" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -26,8 +26,8 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
         <module name="ride" />
-        <module name="PaymentService" />
         <module name="ApiGateWay" />
+        <module name="PaymentService" />
       </profile>
     </annotationProcessing>
   </component>

@@ -80,6 +80,11 @@ public class DebugController {
                 ))); // Properly closed
     }
 
+    @GetMapping("/test-route")
+    public Mono<String> testUserServiceRoute() {
+        return Mono.just("Gateway routes are configured. Try calling /api/v1/users/register");
+    }
+
     // 4. JWT Configuration
     @GetMapping("/jwt-config")
     public Mono<Map<String, Object>> getJwtConfig() {
